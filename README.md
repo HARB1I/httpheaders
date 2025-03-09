@@ -1,27 +1,32 @@
 # HTTP Headers Constants for Go ![Go Reference](https://pkg.go.dev/badge/github.com/HARB1I/httpheaders.svg)
 
-Полный набор предопределенных констант для работы с HTTP-заголовками в Go приложениях.
+Complete set of predefined constants for working with HTTP headers in Go applications.
 
-## Содержание
+## Contents
 - [HTTP Headers Constants for Go ](#http-headers-constants-for-go-)
-  - [Содержание](#содержание)
-  - [Заголовки](#заголовки)
+  - [Contents](#contents)
+  - [Installation](#installation)
+  - [Headers](#headers)
   - [Content-Type](#content-type)
   - [Cache-Control](#cache-control)
   - [Connection](#connection)
-  - [Безопасность](#безопасность)
+  - [Security](#security)
     - [X-Content-Type-Options](#x-content-type-options)
     - [X-Frame-Options](#x-frame-options)
     - [X-XSS-Protection](#x-xss-protection)
     - [Content-Security-Policy](#content-security-policy)
-  - [Кодирование](#кодирование)
+  - [Encoding](#encoding)
   - [CORS](#cors)
-  - [Другие значения](#другие-значения)
-  - [Установка](#установка)
+  - [Other Values](#other-values)
 
-## Заголовки
-| Константа | Значение |
-|-----------|----------|
+## Installation
+```bash
+go get github.com/yourname/httpheaders
+```
+
+## Headers
+| Constant | Value |
+|----------|-------|
 | `Accept` | "Accept" |
 | `AcceptCharset` | "Accept-Charset" |
 | `AcceptEncoding` | "Accept-Encoding" |
@@ -84,8 +89,8 @@
 | `XSSProtection` | "X-XSS-Protection" |
 
 ## Content-Type
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `TextHTML` | "text/html" |
 | `TextPlain` | "text/plain" |
 | `TextCSS` | "text/css" |
@@ -102,8 +107,8 @@
 | `ApplicationForm` | "application/x-www-form-urlencoded" |
 
 ## Cache-Control
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `CacheNoCache` | "no-cache" |
 | `CacheNoStore` | "no-store" |
 | `CacheNoTransform` | "no-transform" |
@@ -115,34 +120,34 @@
 | `CacheStaleWhileRevalidate` | "stale-while-revalidate=" |
 
 ## Connection
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `ConnectionKeepAlive` | "keep-alive" |
 | `ConnectionClose` | "close" |
 
-## Безопасность
+## Security
 ### X-Content-Type-Options
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `XCTO_NoSniff` | "nosniff" |
 
 ### X-Frame-Options
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `XFO_Deny` | "DENY" |
 | `XFO_SameOrigin` | "SAMEORIGIN" |
 | `XFO_AllowFrom` | "ALLOW-FROM" |
 
 ### X-XSS-Protection
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `XSSP_Enable` | "1" |
 | `XSSP_Block` | "1; mode=block" |
 | `XSSP_Report` | "1; report=" |
 
 ### Content-Security-Policy
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `CSP_DefaultSrc` | "default-src" |
 | `CSP_ScriptSrc` | "script-src" |
 | `CSP_StyleSrc` | "style-src" |
@@ -158,25 +163,25 @@
 | `CSP_BaseURI` | "base-uri" |
 | `CSP_FormAction` | "form-action" |
 
-## Кодирование
-| Константа | Значение |
-|-----------|----------|
+## Encoding
+| Constant | Value |
+|----------|-------|
 | `EncodingGzip` | "gzip" |
 | `EncodingBrotli` | "br" |
 | `EncodingDeflate` | "deflate" |
 
 ## CORS
-| Константа | Значение |
-|-----------|----------|
+| Constant | Value |
+|----------|-------|
 | `ACAO_AllowAll` | "*" |
 
-## Другие значения
-| Константа | Значение |
-|-----------|----------|
+## Other Values
+| Constant | Value |
+|----------|-------|
 | `ServerValue` | "Server" |
 | `LocationValue` | "Location" |
 | `SetCookieValue` | "Set-Cookie" |
 
-## Установка
-```bash
-go get github.com/HARB1I/httpheaders
+
+
+
